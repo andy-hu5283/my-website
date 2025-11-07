@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <title>我的第一個網頁</title>
+  <meta charset="UTF-8" />
+  <title>Andy 的第一個網站</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Heiti TC", sans-serif;
+      background: #f4f4f4;
+    }
+
+    .wrapper {
+      min-height: 100vh; /* 讓畫面至少跟視窗一樣高 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 32px 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      max-width: 480px;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: 28px;
+      color: #333333;
+    }
+
+    p {
+      margin: 6px 0;
+      font-size: 16px;
+      color: #555555;
+      line-height: 1.6;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: #2563eb;
+      background: #e0edff;
+    }
+  </style>
 </head>
 <body>
-  <h1>哈囉，我的第一個網頁！</h1>
-  <p>我是用 VS Code 做出來的，而且我本來完全不懂程式。</p>
+  <div class="wrapper">
+    <div class="card">
+      <h1>嗨，我是 Andy！</h1>
+      <p>這是我用 VS Code 做出的第一個網頁。</p>
+      <p>我原本完全不懂程式，現在正一步一步學習中。</p>
+      <span class="tag">版本 1.0 · 由自己親手完成</span>
+    </div>
+  </div>
 </body>
 </html>
